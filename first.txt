@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,k,s,count;
+	count=0;
+	printf("输入s(8<s<100)");
+	scanf("%d",&s);
+	if(s<8&&s>100) 
+	  {
+	  	printf("重新输入s");
+	  scanf("%d",&s);
+	  }
+	  else{ 
+	    for(i=1;i<s;i++)
+	    {
+	    	for(j=1;j<s/2;j++)
+	    	{
+	    	
+	    		for(k=1;k<s/5;k++)
+	    		{
+	    			if(i+j*2+k*5==s) 
+	    			{
+	    					printf("i=%d,j=%d,k=%d",i,j,k);
+	    					count++;
+					}
+				}
+			}
+		}
+		printf("count=%d",count);
+   }
+ } 
+ 
